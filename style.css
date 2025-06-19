@@ -1,0 +1,92 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #00f7ff;
+  margin-bottom: 20px;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background-color: #2a2a2a;
+  color: #fff;
+  resize: none;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 15px;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 15px;
+  background-color: #00f7ff;
+  border: none;
+  border-radius: 5px;
+  color: #121212;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #00c4cc;
+}
+
+pre#resumeOutput {
+  background-color: #2a2a2a;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+
+#resumeScore {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #00ff88;
+  text-align: center;
+}
+
+/* Light Theme */
+body.light {
+  background-color: #f8f8f8;
+  color: #222;
+}
+
+body.light .container {
+  background-color: #fff;
+}
+
+body.light input,
+body.light textarea {
+  background-color: #f0f0f0;
+  color: #222;
+}
+
+body.light pre#resumeOutput {
+  background-color: #e8e8e8;
+}
