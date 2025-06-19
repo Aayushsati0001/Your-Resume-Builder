@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🚀 Resume Builder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📝 Resume Builder</h1>
+
+    <div class="form">
+      <input type="text" id="name" placeholder="Your Full Name" />
+      <input type="email" id="email" placeholder="Email Address" />
+      <input type="text" id="phone" placeholder="Phone Number" />
+      <textarea id="education" rows="2" placeholder="1. Education (e.g. B.Tech CSE - XYZ University)"></textarea>
+      <textarea id="skills" rows="2" placeholder="2. Skills (e.g. HTML, CSS, JS, Python)"></textarea>
+      <textarea id="experience" rows="3" placeholder="3. Experience (e.g. Intern at ABC, Freelance Developer)"></textarea>
+      <textarea id="projects" rows="3" placeholder="4. Projects (e.g. Portfolio Website, Weather App)"></textarea>
+
+      <div class="buttons">
+        <button onclick="generateResume()">Generate Resume</button>
+        <button onclick="toggleTheme()">Toggle Theme</button>
+        <button onclick="downloadResume()">Download</button>
+      </div>
+    </div>
+
+    <pre id="resumeOutput">✨ Your resume will appear here...</pre>
+    <div id="resumeScore"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
